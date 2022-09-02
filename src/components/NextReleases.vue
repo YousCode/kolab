@@ -5,28 +5,25 @@
     </div>
 
     <div class="containerReleases">
-      <H1>Douter de tout,sauf de vous.</H1>
-      <h2>Créer maintenant.</h2>
-      <h3 class="Description">On s'assure du reste.</h3>
-    <button id="buttonPlay">
-        <v-icon name="play" scale="1" id="iconMain" color="#e5e5e5" />
-        <span>Écouter</span>
-      </button>
-     
+      <h1>Douter de tout,sauf de vous.</h1>
+      <h3>Créer maintenant.</h3>
+     <h4>Jean Dawson- Starface</h4>
+<h5>Réalisé par Megaforce</h5>
+      
     </div>
   </div>
 </template>
 
 <script>
-import Icon from "vue-awesome/components/Icon";
+// import Icon from "vue-awesome/components/Icon"; -->
 export default {
   name: "NextRealeses",
   data() {
     return {};
   },
-  components: {
-    "v-icon": Icon
-  }
+  // components: {
+  //   "v-icon": Icon
+  // }
 };
 </script>
 <style >
@@ -34,7 +31,8 @@ export default {
   width: 100%;
   height: 500px;
   position: relative;
-  background: #1414147e;
+ background:url("../assets/video.mp4") ;
+ background-size: cover;
   display: flex;
   align-items: center;
 }
@@ -54,6 +52,7 @@ export default {
   width: 500px;
   margin-left: 40px;
 }
+
 .containerReleases h1 {
   color: #ffffff;
   text-shadow: black 0.1em 0.1em 0.2em;
@@ -62,15 +61,15 @@ export default {
   margin-bottom: 30px;
   position: relative;
 }
-.containerReleases p {
-  color: #e9e9e9;
+.containerReleases h{
+  color: #7B37FF;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: #e9e9e9 0em 0em 0em;
   font-size: 15px;
   margin-bottom: 30px;
   text-align: justify;
 }
-.containerReleases button {
+.containerReleases b {
   border: none;
   background: rgba(78, 78, 78, 0.562);
   color: #e9e9e9;
